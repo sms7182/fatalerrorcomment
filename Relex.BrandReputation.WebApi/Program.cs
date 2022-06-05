@@ -1,5 +1,7 @@
 
 
+using Relex.BrandReputation.Data.Extensions;
+
 namespace Relex.BrandReputation.WebApi
 {
     [ExcludeFromCodeCoverage]
@@ -22,8 +24,14 @@ namespace Relex.BrandReputation.WebApi
             var app = builder.Build();
             // Configure the HTTP request pipeline.
             ConfigureApp(app);
+            //using (var scope = app.Services.CreateScope())
+            //{
+            //    var services = scope.ServiceProvider;
 
-            app.Run();
+            //    var context = services.GetRequiredService<BrandReputationDbContext>();
+            //    context.ApplyMissedMigrations();
+            //}
+                app.Run();
         }
 
         private static void ConfigureServices(IServiceCollection services)
@@ -50,6 +58,7 @@ namespace Relex.BrandReputation.WebApi
 
             services.AddDbContext<BrandReputationDbContext>(options =>
             {
+               
                 options.UseSqlServer(GlobalAppSettings.Instance.ConnectionStrings.DefaultConnection);
             });
 
@@ -57,7 +66,27 @@ namespace Relex.BrandReputation.WebApi
 
         private static void ConfigureApp(WebApplication app)
         {
-            if (app.Environment.IsDevelopment())
+            try
+            {
+                Console.WriteLine("Start migration");
+                using (var scope = app.Services.CreateScope())
+                {
+                    Console.WriteLine("Get Required service");
+                    var db = scope.ServiceProvider.GetRequiredService<BrandReputationDbContext>();
+                    //db.Database.EnsureCreated();
+                    Console.WriteLine("Start migrate method");
+                    db.Database.MigrateAsync().Wait();
+                    Console.WriteLine("Migrate done");
+
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+
+            }
+            //  if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();

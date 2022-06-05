@@ -1,0 +1,29 @@
+version: '3.9'
+services:
+    
+    db:
+       image: "mcr.microsoft.com/mssql/server"
+       environment:
+           SA_PASSWORD: "Fatalerror@123"
+           ACCEPT_EULA: "Y"
+       container_name: db
+       ports:
+         -  1443:1433
+
+       
+    relex:
+        image: ${DOCKER_REGISTRY-}relex
+        container_name: relax
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Production
+        build:
+          context: .
+          dockerfile: Relex.BrandReputation.WebApi/Dockerfile
+          args:
+            - ASPNETCORE_ENVIRONMENT=Production
+        depends_on: [db]
+        ports:
+          - 44386:443
+        links:
+          - db
+         

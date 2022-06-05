@@ -11,6 +11,10 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["Relex.BrandReputation.WebApi/Relex.BrandReputation.WebApi.csproj", "Relex.BrandReputation.WebApi/"]
+COPY ["Relex.BrandReputation.Domain/Relex.BrandReputation.Domain.csproj","Relex.BrandReputation.Domain/"]
+COPY ["Relex.BrandReputation.Data/Relex.BrandReputation.Data.csproj","Relex.BrandReputation.Data/"]
+COPY ["Relex.BrandReputation.Service/Relex.BrandReputation.Service.csproj","Relex.BrandReputation.Service/"]
+COPY ["Relex.BrandReputation.Core/Relex.BrandReputation.Core.csproj","Relex.BrandReputation.Core/"]
 RUN dotnet restore "Relex.BrandReputation.WebApi/Relex.BrandReputation.WebApi.csproj"
 COPY . .
 WORKDIR "/src/Relex.BrandReputation.WebApi"
