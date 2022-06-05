@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Relex.BrandReputation.WebApi", "Relex.BrandReputation.WebApi\Relex.BrandReputation.WebApi.csproj", "{47954FCA-F7E0-45BC-A5BF-D10743792611}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Relex.BrandReputation.Service", "Relex.BrandReputation.Service\Relex.BrandReputation.Service.csproj", "{4900BF83-D0FF-486B-AD71-D7F6B9021C91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Relex.BrandReputation.Domain", "Relex.BrandReputation.Domain\Relex.BrandReputation.Domain.csproj", "{23F47DFF-EFF0-44DB-BB02-B8A612762799}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Relex.BrandReputation.Data", "Relex.BrandReputation.Data\Relex.BrandReputation.Data.csproj", "{4FB72436-3515-4C57-A6A3-64E02ECD34C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Relex.BrandReputation.Data.DbMigration", "Relex.BrandReputation.Data.DbMigration\Relex.BrandReputation.Data.DbMigration.csproj", "{84E641D8-1D62-4CC1-A34A-81EE648E4444}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relex.BrandReputation.Core", "Relex.BrandReputation.Core\Relex.BrandReputation.Core.csproj", "{4D9C44CD-11E5-4179-9C7A-D0FBE221EB46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47954FCA-F7E0-45BC-A5BF-D10743792611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47954FCA-F7E0-45BC-A5BF-D10743792611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47954FCA-F7E0-45BC-A5BF-D10743792611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47954FCA-F7E0-45BC-A5BF-D10743792611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4900BF83-D0FF-486B-AD71-D7F6B9021C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4900BF83-D0FF-486B-AD71-D7F6B9021C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4900BF83-D0FF-486B-AD71-D7F6B9021C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4900BF83-D0FF-486B-AD71-D7F6B9021C91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F47DFF-EFF0-44DB-BB02-B8A612762799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F47DFF-EFF0-44DB-BB02-B8A612762799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F47DFF-EFF0-44DB-BB02-B8A612762799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F47DFF-EFF0-44DB-BB02-B8A612762799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB72436-3515-4C57-A6A3-64E02ECD34C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB72436-3515-4C57-A6A3-64E02ECD34C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB72436-3515-4C57-A6A3-64E02ECD34C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB72436-3515-4C57-A6A3-64E02ECD34C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E641D8-1D62-4CC1-A34A-81EE648E4444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E641D8-1D62-4CC1-A34A-81EE648E4444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E641D8-1D62-4CC1-A34A-81EE648E4444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E641D8-1D62-4CC1-A34A-81EE648E4444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9C44CD-11E5-4179-9C7A-D0FBE221EB46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9C44CD-11E5-4179-9C7A-D0FBE221EB46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9C44CD-11E5-4179-9C7A-D0FBE221EB46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9C44CD-11E5-4179-9C7A-D0FBE221EB46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CE1823F-1F57-4866-87A1-126EF1B3283C}
+	EndGlobalSection
+EndGlobal

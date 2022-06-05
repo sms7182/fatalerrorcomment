@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>warnings</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.0.2" />
+    <PackageReference Include="TimeLocalization" Version="1.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Relex.BrandReputation.Core\Relex.BrandReputation.Core.csproj" />
+    <ProjectReference Include="..\Relex.BrandReputation.Domain\Relex.BrandReputation.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

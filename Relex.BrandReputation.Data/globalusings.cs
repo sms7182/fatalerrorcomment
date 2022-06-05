@@ -1,0 +1,12 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Infrastructure;
+global using Microsoft.EntityFrameworkCore.Migrations;
+global using Relex.BrandReputation.Data.DbContexts;
+global using Relex.BrandReputation.Data.Seeders;
+global using Relex.BrandReputation.Domain.Entities;
+global using Relex.BrandReputation.Service.ResourceParameters;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Microsoft.EntityFrameworkCore.SqlServer.Migrations.Internal;
