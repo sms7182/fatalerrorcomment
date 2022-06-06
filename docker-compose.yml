@@ -23,7 +23,8 @@ services:
             - ASPNETCORE_ENVIRONMENT=Production
         depends_on: [db]
         ports:
-          - 44386:443
+          - 7261:443
+          - 5261:80
         links:
           - db
          
